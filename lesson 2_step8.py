@@ -23,6 +23,8 @@ try:
 
     button = browser.find_element_by_tag_name("button")
     button.click()
+    text = browser.switch_to.alert.text
+    print(text)
     time.sleep(5)
 
 finally:
